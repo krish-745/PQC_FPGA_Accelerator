@@ -1,0 +1,13 @@
+[project]
+name = "pqc-fpga-accelerator"
+version = "0.1.0"
+description = "Golden model and host tools for a unified ML-KEM / ML-DSA NTT accelerator on FPGA"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["python/tests"]
+pythonpath = ["python"]
