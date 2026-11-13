@@ -1,3 +1,13 @@
 .venv/
 __pycache__/
 .pytest_cache/
+build/
+.Xil/
+*.jou
+*.str
+vivado*.log
+clockInfo.txt
+xvlog.log
+xvlog.pb
+# licence-restricted paper: keep local, never commit
+A_Leakage-Aware_DSP-Free_Square-Form_Modular_Multiplier_for_ML-KEM.pdf
