@@ -1,0 +1,9 @@
+Manual board checks, 2026-11-16, Nexys 4 DDR on COM6, image sys P=4 DIL_SPECIAL=1
+(LED meanings from rtl/top.v: LED0 heartbeat, LED1 core busy, LED2 last response was an error, LED3 in reset)
+
+- LD0 heartbeat blinks about once a second: yes
+- Hold CPU_RESET: LD3 lights while held and goes dark on release: yes
+- Selftest after the reset passes: yes (after_reset_P4_DIL_SPECIAL1.txt)
+- Send unknown command 0x77 (reply 5a02000002 = ERR_CMD): LD2 lights: yes
+- Short CPU_RESET press clears LD2: yes
+- LD1 (core busy) not checked by eye: a run lasts at most 36 us

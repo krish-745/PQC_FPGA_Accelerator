@@ -1,0 +1,5 @@
+board: P = 1, Dilithium multiplier = Barrett
+scheme    FPGA cycles  FPGA time  LOAD (host)  RUN (host)  READ (host)
+ML-KEM           3594    35.94 us      80.5 ms     16.5 ms      79.4 ms
+ML-DSA           3594    35.94 us      80.0 ms     15.9 ms      79.8 ms
+PASS: selftest, 20 round(s), P = 1

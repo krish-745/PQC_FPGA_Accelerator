@@ -1,0 +1,30 @@
+== P=1 DIL_SPECIAL=0
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P1_DIL_SPECIAL0\sys.bit
+P = 1, special = 0
+ML-KEM NTT=906 INTT=1162 PWM=650 MUL=3594 results OK
+ML-DSA NTT=1034 INTT=1290 PWM=266 MUL=3594 results OK
+== P=1 DIL_SPECIAL=1
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P1_DIL_SPECIAL1\sys.bit
+P = 1, special = 1
+ML-KEM NTT=906 INTT=1162 PWM=650 MUL=3594 results OK
+ML-DSA NTT=1034 INTT=1290 PWM=266 MUL=3594 results OK
+== P=2 DIL_SPECIAL=0
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P2_DIL_SPECIAL0\sys.bit
+P = 2, special = 0
+ML-KEM NTT=458 INTT=586 PWM=330 MUL=1802 results OK
+ML-DSA NTT=522 INTT=650 PWM=138 MUL=1802 results OK
+== P=2 DIL_SPECIAL=1
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P2_DIL_SPECIAL1\sys.bit
+P = 2, special = 1
+ML-KEM NTT=458 INTT=586 PWM=330 MUL=1802 results OK
+ML-DSA NTT=522 INTT=650 PWM=138 MUL=1802 results OK
+== P=4 DIL_SPECIAL=0
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P4_DIL_SPECIAL0\sys.bit
+P = 4, special = 0
+ML-KEM NTT=234 INTT=298 PWM=170 MUL=906 results OK
+ML-DSA NTT=266 INTT=330 PWM=74 MUL=906 results OK
+== P=4 DIL_SPECIAL=1
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P4_DIL_SPECIAL1\sys.bit
+P = 4, special = 1
+ML-KEM NTT=234 INTT=298 PWM=170 MUL=906 results OK
+ML-DSA NTT=266 INTT=330 PWM=74 MUL=906 results OK

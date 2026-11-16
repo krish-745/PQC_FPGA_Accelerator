@@ -1,0 +1,5 @@
+board: P = 4, Dilithium multiplier = special-form
+scheme    FPGA cycles  FPGA time  LOAD (host)  RUN (host)  READ (host)
+ML-KEM            906     9.06 us      80.4 ms     16.1 ms      80.3 ms
+ML-DSA            906     9.06 us      79.4 ms     16.0 ms      79.3 ms
+PASS: selftest, 20 round(s), P = 4

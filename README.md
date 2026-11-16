@@ -108,10 +108,11 @@ Vivado does not run on macOS. On a Mac:
 ```
 python/pqc_golden/   golden model: params, ntt, reference (slow, independent), poly, modmul (bit-exact),
                      schedule (cycle-accurate model of the core)
-python/host/         protocol.py (framing), pqc_host.py (board tests), fake_board.py (protocol model for tests)
+python/host/         protocol.py (framing), pqc_host.py (board tests), opcycles.py (per-op board check), fake_board.py (protocol model for tests)
 python/tests/        pytest suites (slow suite: -m slow)
 python/gen_vectors.py  writes rtl/twiddle_rom.v and build/vectors/*
 rtl/                 Verilog: mod_mul, butterfly, ntt_core, keccak_*, uart_*, cmd_ctrl, top, bench wrappers
+docs/board/          board test logs (2026-11-16)
 tb/                  self-checking testbenches (print TEST PASSED / TEST FAILED)
 constraints/         Nexys 4 DDR pins and clock
 scripts/             flow.py (sim/regress/build/program), build.tcl, program.tcl

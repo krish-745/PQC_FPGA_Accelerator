@@ -1,0 +1,2 @@
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\echo\echo.bit
+PASS: 1000 bytes echoed in 1.00 s

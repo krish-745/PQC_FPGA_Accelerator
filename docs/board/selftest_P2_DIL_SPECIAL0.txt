@@ -1,0 +1,6 @@
+PROGRAM DONE C:\Users\rahul\Downloads\PQC_FPGA_Accelerator\build\sys_P2_DIL_SPECIAL0\sys.bit
+board: P = 2, Dilithium multiplier = Barrett
+scheme    FPGA cycles  FPGA time  LOAD (host)  RUN (host)  READ (host)
+ML-KEM           1802    18.02 us      79.7 ms     16.0 ms      79.9 ms
+ML-DSA           1802    18.02 us      79.1 ms     15.8 ms      80.1 ms
+PASS: selftest, 3 round(s), P = 2

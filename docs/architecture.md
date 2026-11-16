@@ -170,7 +170,7 @@ Rules:
   in 256 cycles. Otherwise the A, B and C buffers and the tags are untouched. `tb_top` checks
   invalid coefficients at positions 0, 128 and 255, a 2²⁴ − 1 coefficient, a bad checksum and an
   interrupted transfer, each followed by a READ showing the buffer unchanged. `pqc_host.py selftest`
-  runs the same checks on the board (board run pending; see `docs/status.md`).
+  runs the same checks on the board (passed on all six bitstreams; see `docs/board/`).
 - **Timeout and resync.** After `ERR_TIMEOUT` the controller hunts for the next A5. If the first bytes
   of a request are lost on the wire, the controller never sees its A5, so it answers nothing; a host
   then has to time out and resend. `pqc_host.py` raises an error in that case, it does not retry.

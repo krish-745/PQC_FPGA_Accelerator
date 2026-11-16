@@ -3,7 +3,8 @@
 All numbers below come from runs on the final RTL, made on 2026-11-12:
 - **Tools:** Vivado 2024.2, default synthesis and implementation strategies; part XC7A100T-1CSG324C (Nexys 4 DDR).
 - **Raw reports:** `build/<target>_<options>/`. `uv run python scripts/flow.py summarize` regenerates the build table.
-- **Not available:** board measurements are **pending** (no board was connected; see `docs/status.md`).
+- **Board:** all six system bitstreams were run on a Nexys 4 DDR on 2026-11-16. Every operation matched
+  the golden model, and the cycle counts equal the ones in §3.1 (logs in `docs/board/`).
 
 ## 1. What was built
 
@@ -223,8 +224,10 @@ The comparison supports these conclusions:
 
 ## 4. Limitations
 
-- **No board measurements.** The board was not available. The echo test, the full self-test and the
-  host-side transfer timing are pending. The bitstreams exist but have not been run.
+- **Host timing on the board.** A LOAD or READ takes about 80 ms on the host: about 67 ms of UART
+  transfer plus the FTDI driver's 16 ms latency timer. A RUN takes about 16 ms at every P, which is
+  that same timer, not compute time. Board compute time comes from the FPGA cycle counter
+  (`docs/board/README.md`).
 - **No security claims.** The design has no side-channel countermeasures, and no leakage evaluation
   was performed.
 - **Fmax precision.** Bounds come from one placement per period. Different seeds or strategies could
